@@ -53,11 +53,15 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/EditarcitaMedica/calendar_11133975.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="BUSCAR"/>
+            <Property name="horizontalTextPosition" type="int" value="10"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="400" y="90" width="110" height="30"/>
+              <AbsoluteConstraints x="400" y="90" width="140" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -70,7 +74,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="150" y="360" width="380" height="60"/>
+              <AbsoluteConstraints x="150" y="350" width="380" height="80"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -255,7 +259,11 @@
         </Container>
         <Component class="javax.swing.JButton" name="btnSave">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/EditarcitaMedica/floppy-disk_2037.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="GUARDAR"/>
+            <Property name="horizontalTextPosition" type="int" value="10"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveActionPerformed"/>
@@ -268,7 +276,11 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnDelete">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/EditarcitaMedica/delete_16480390.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="CANCELAR"/>
+            <Property name="horizontalTextPosition" type="int" value="10"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

@@ -53,12 +53,14 @@ public class Editor extends javax.swing.JFrame {
         bg.setBackground(new java.awt.Color(204, 204, 204));
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditarcitaMedica/calendar_11133975.png"))); // NOI18N
         jButton1.setText("BUSCAR");
-        bg.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 110, 30));
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        bg.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 140, 30));
 
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        bg.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 380, 60));
+        bg.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 380, 80));
 
         lblpaciente.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblpaciente.setText("Paciente:");
@@ -129,7 +131,9 @@ public class Editor extends javax.swing.JFrame {
 
         bg.add(backroud, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 590, 120));
 
+        btnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditarcitaMedica/floppy-disk_2037.png"))); // NOI18N
         btnSave.setText("GUARDAR");
+        btnSave.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSaveActionPerformed(evt);
@@ -137,7 +141,9 @@ public class Editor extends javax.swing.JFrame {
         });
         bg.add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 450, 170, 40));
 
+        btnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditarcitaMedica/delete_16480390.png"))); // NOI18N
         btnDelete.setText("CANCELAR");
+        btnDelete.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         bg.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 450, 190, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
