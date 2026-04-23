@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package EditarcitaMedica;
+package EditrDeCitas.FrontEnd;
 
 /**
  *
@@ -53,7 +53,7 @@ public class Editor extends javax.swing.JFrame {
         bg.setBackground(new java.awt.Color(204, 204, 204));
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditarcitaMedica/calendar_11133975.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditrDeCitas/FrontEnd/magnifying-glass_10020288.png"))); // NOI18N
         jButton1.setText("BUSCAR");
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         bg.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 140, 30));
@@ -66,11 +66,14 @@ public class Editor extends javax.swing.JFrame {
         lblpaciente.setText("Paciente:");
         bg.add(lblpaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 60, 20));
 
+        lblHora.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblHora.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditrDeCitas/FrontEnd/clock_13321011.png"))); // NOI18N
         lblHora.setText("jLabel8");
-        bg.add(lblHora, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 160, 30));
+        lblHora.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        bg.add(lblHora, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 190, 30));
 
         lblPaciente.setText("jLabel7");
-        bg.add(lblPaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 170, 30));
+        bg.add(lblPaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 210, 30));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Fecha:");
@@ -88,7 +91,10 @@ public class Editor extends javax.swing.JFrame {
         jLabel1.setText("ID de Cita");
         bg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, 110, 40));
 
+        lblFecha.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblFecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditrDeCitas/FrontEnd/calendar_11133975.png"))); // NOI18N
         lblFecha.setText("jLabel2");
+        lblFecha.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         bg.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 190, 40));
 
         lblBuscaCitas.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -131,7 +137,7 @@ public class Editor extends javax.swing.JFrame {
 
         bg.add(backroud, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 590, 120));
 
-        btnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditarcitaMedica/floppy-disk_2037.png"))); // NOI18N
+        btnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditrDeCitas/FrontEnd/floppy-disk_2037.png"))); // NOI18N
         btnSave.setText("GUARDAR");
         btnSave.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         btnSave.addActionListener(new java.awt.event.ActionListener() {
@@ -141,7 +147,7 @@ public class Editor extends javax.swing.JFrame {
         });
         bg.add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 450, 170, 40));
 
-        btnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditarcitaMedica/delete_16480390.png"))); // NOI18N
+        btnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditrDeCitas/FrontEnd/delete_16480390.png"))); // NOI18N
         btnDelete.setText("CANCELAR");
         btnDelete.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         bg.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 450, 190, 40));
