@@ -4,7 +4,9 @@
  */
 package EditrDeCitas.FrontEnd;
 
-
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -70,12 +72,13 @@ public class Editor extends javax.swing.JFrame {
 
         lblHora.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHora.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditrDeCitas/FrontEnd/clock_13321011.png"))); // NOI18N
-        lblHora.setText("jLabel8");
         lblHora.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         bg.add(lblHora, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 190, 30));
 
-        lblPaciente.setText("jLabel7");
-        bg.add(lblPaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 210, 30));
+        lblPaciente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPaciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditrDeCitas/FrontEnd/person_13371705.png"))); // NOI18N
+        lblPaciente.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        bg.add(lblPaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 210, 30));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Fecha:");
@@ -95,7 +98,6 @@ public class Editor extends javax.swing.JFrame {
 
         lblFecha.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblFecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EditrDeCitas/FrontEnd/calendar_11133975.png"))); // NOI18N
-        lblFecha.setText("jLabel2");
         lblFecha.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         bg.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 190, 40));
 
@@ -206,7 +208,36 @@ public class Editor extends javax.swing.JFrame {
             }
         });
     }
+    public JButton getBtnBuscar() {
+        return jButton1;
+    }
 
+    public JButton getBtnGuardar() {
+        return btnSave;
+    }
+
+    public JTextField getTxtId() {
+        return backroud2;
+    }
+
+    public JTextField getTxtMotivo() {
+        return jTextField1;
+    }
+
+    public JLabel getLblFecha() {
+        return lblFecha;
+    }
+
+    public JLabel getLblHora() {
+        return lblHora;
+    }
+
+    public JLabel getLblPaciente() {
+        return lblPaciente;
+    }
+
+
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel backroud;
     private javax.swing.JTextField backroud2;

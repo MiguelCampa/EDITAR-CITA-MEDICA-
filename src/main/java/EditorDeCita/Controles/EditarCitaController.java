@@ -9,11 +9,12 @@ import EditorDeCitas.Model.EstadoCita;
 import EditorDeCitas.Servicio.CitaService;
 import EditorDeCita.Vista.EditarCitaView;
 
+
 import javax.swing.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class EditarCitaController {
+public class EditarCitaController  {
 
     private EditarCitaView view;
     private CitaService service;

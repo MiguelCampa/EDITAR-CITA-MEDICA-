@@ -97,7 +97,6 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/EditrDeCitas/FrontEnd/clock_13321011.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jLabel8"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
           <Constraints>
@@ -108,11 +107,15 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblPaciente">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel7"/>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/EditrDeCitas/FrontEnd/person_13371705.png"/>
+            </Property>
+            <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="190" y="210" width="210" height="30"/>
+              <AbsoluteConstraints x="180" y="210" width="210" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -174,7 +177,6 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/EditrDeCitas/FrontEnd/calendar_11133975.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jLabel2"/>
             <Property name="horizontalTextPosition" type="int" value="2"/>
           </Properties>
           <Constraints>

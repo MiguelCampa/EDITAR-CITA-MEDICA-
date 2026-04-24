@@ -4,12 +4,12 @@
  */
 package EditorDeCitas.Main;
 
-import EditorDeCitas.Mysql.MysqlDB;
+import EditrDeCitas.FrontEnd.Editor;
+import EditorDeCita.Controles.EditarCitaController;
+import EditorDeCitas.Servicio.CitaService;
 import EditorDeCitas.Repository.CitaRepository;
 import EditorDeCitas.Repository.ICitaRepository;
-import EditorDeCitas.Servicio.CitaService;
-import EditorDeCita.Controles.EditarCitaController;
-import EditorDeCita.Vista.EditarCitaView;
+import EditorDeCitas.Mysql.MysqlDB;
 
 import javax.swing.SwingUtilities;
 import java.sql.Connection;
@@ -21,22 +21,22 @@ public class Main {
         SwingUtilities.invokeLater(() -> {
 
             try {
-                //  1. Conexión a la base de datos
-                Connection connection = MysqlDB.getConnection();
+                // Conexión a MySQL
+                Connection conn = MysqlDB.getConnection();
 
-                //   2. Repository
-                ICitaRepository repository = new CitaRepository(connection);
+                //  Repository
+                ICitaRepository repo = new CitaRepository(conn);
 
-                //  3. Service
-                CitaService service = new CitaService(repository);
+                //  Service
+                CitaService service = new CitaService(repo);
 
-                //   4. Vista (TU UI personalizada)
-                EditarCitaView view = new EditarCitaView();
+                //  Vista (TU JFrame)
+                Editor view = new Editor();
 
-                //  5. Controller (conecta todo)
+                // Controller
                 new EditarCitaController(view, service);
 
-                //   6. Mostrar ventana
+                //  Mostrar ventana
                 view.setLocationRelativeTo(null);
                 view.setVisible(true);
 
@@ -48,4 +48,3 @@ public class Main {
         });
     }
 }
-
