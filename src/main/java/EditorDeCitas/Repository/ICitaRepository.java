@@ -4,10 +4,14 @@
  */
 package EditorDeCitas.Repository;
 
-/**
- *
- * @author Usuario
- */
-public class ICitaRepository {
-    
+import EditorDeCitas.Model.Cita;
+
+public interface ICitaRepository {
+
+    // Buscar una cita por ID
+    Cita buscarPorId(int id);
+
+    // Actualizar una cita
+    boolean actualizar(Cita cita);
 }
+

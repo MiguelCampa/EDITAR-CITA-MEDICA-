@@ -4,10 +4,8 @@
  */
 package EditorDeCitas.Model;
 
-/**
- *
- * @author Usuario
- */
 public enum EstadoCita {
-    
+    PROGRAMADA,
+    CANCELADA,
+    COMPLETADA
 }
