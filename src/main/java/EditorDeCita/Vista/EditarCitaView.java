@@ -9,14 +9,14 @@ import java.awt.*;
 
 public class EditarCitaView extends JFrame {
 
-    // 🔹 Campos
+    // Campos
     private JTextField txtId;
     private JTextField txtFecha;
     private JTextField txtHora;
     private JTextField txtMotivo;
     private JComboBox<String> cbEstado;
 
-    // 🔹 Botones
+    //  Botones
     private JButton btnBuscar;
     private JButton btnGuardar;
 
@@ -34,7 +34,7 @@ public class EditarCitaView extends JFrame {
 
         setLayout(new GridLayout(7, 2, 10, 10));
 
-        // 🔹 ID
+        //  ID
         add(new JLabel("ID Cita:"));
         txtId = new JTextField();
         add(txtId);
@@ -43,22 +43,22 @@ public class EditarCitaView extends JFrame {
         add(btnBuscar);
         add(new JLabel("")); // espacio vacío
 
-        // 🔹 Fecha
+        //  Fecha
         add(new JLabel("Fecha (YYYY-MM-DD):"));
         txtFecha = new JTextField();
         add(txtFecha);
 
-        // 🔹 Hora
+        //  Hora
         add(new JLabel("Hora (HH:MM):"));
         txtHora = new JTextField();
         add(txtHora);
 
-        // 🔹 Motivo
+        //  Motivo
         add(new JLabel("Motivo:"));
         txtMotivo = new JTextField();
         add(txtMotivo);
 
-        // 🔹 Estado
+        //  Estado
         add(new JLabel("Estado:"));
         cbEstado = new JComboBox<>(new String[]{
                 "PROGRAMADA",
@@ -67,14 +67,14 @@ public class EditarCitaView extends JFrame {
         });
         add(cbEstado);
 
-        // 🔹 Botón Guardar
+        //  Botón Guardar
         btnGuardar = new JButton("Guardar");
         add(btnGuardar);
 
         add(new JLabel("")); // espacio vacío
     }
 
-    // 🔹 GETTERS (para el Controller)
+    //  GETTERS (para el Controller)
 
     public JTextField getTxtId() {
         return txtId;

@@ -18,7 +18,7 @@ public class CitaRepository implements ICitaRepository {
         this.connection = connection;
     }
 
-    // 🔍 Buscar cita por ID
+    //   Buscar cita por ID
     @Override
     public Cita buscarPorId(int id) {
 
@@ -62,7 +62,7 @@ public class CitaRepository implements ICitaRepository {
         return null;
     }
 
-    // ✏️ Actualizar cita
+    //  Actualizar cita
     @Override
     public boolean actualizar(Cita cita) {
 

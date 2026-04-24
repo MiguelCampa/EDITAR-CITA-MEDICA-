@@ -33,10 +33,13 @@ public class EditarCitaController {
         view.getBtnGuardar().addActionListener(e -> guardarCita());
     }
 
-    // 🔍 Buscar cita
+    //  Buscar cita
     private void buscarCita() {
         try {
-            edi
+            int id = Integer.parseInt(view.getTxtId().getText());
+
+
+            citaActual = service.buscarCita(id);
 
             if (citaActual != null) {
 
@@ -57,7 +60,7 @@ public class EditarCitaController {
         }
     }
 
-    // ✏️ Guardar cambios
+    //  Guardar cambios
     private void guardarCita() {
 
         if (citaActual == null) {

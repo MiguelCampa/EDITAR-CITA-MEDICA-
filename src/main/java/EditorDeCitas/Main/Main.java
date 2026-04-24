@@ -21,22 +21,22 @@ public class Main {
         SwingUtilities.invokeLater(() -> {
 
             try {
-                // 🔹 1. Conexión a la base de datos
+                //  1. Conexión a la base de datos
                 Connection connection = MysqlDB.getConnection();
 
-                // 🔹 2. Repository
+                //   2. Repository
                 ICitaRepository repository = new CitaRepository(connection);
 
-                // 🔹 3. Service
+                //  3. Service
                 CitaService service = new CitaService(repository);
 
-                // 🔹 4. Vista (TU UI personalizada)
+                //   4. Vista (TU UI personalizada)
                 EditarCitaView view = new EditarCitaView();
 
-                // 🔹 5. Controller (conecta todo)
+                //  5. Controller (conecta todo)
                 new EditarCitaController(view, service);
 
-                // 🔹 6. Mostrar ventana
+                //   6. Mostrar ventana
                 view.setLocationRelativeTo(null);
                 view.setVisible(true);
 
